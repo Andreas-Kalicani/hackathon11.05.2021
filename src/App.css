@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+ }
+
+ .background-image{
+    width:100%;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.title-container{
+    width: 100%; 
+    height:50px; 
+    object-fit: cover;
+    background-color: grey;
+}
+
+.title-container{
+    width: 100%; 
+    height: 50vh; 
+    background-color: grey;
+}
