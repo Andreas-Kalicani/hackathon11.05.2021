@@ -102,8 +102,8 @@ function App() {
 
   return (
    
-      <div className="App">
-        <div className="flex" style={{ backgroundImage: `url(${Mars})`, height:"600 px",  backgroundRepeat: "no-repeat", backgroundSize:"cover" }} >
+      <div className="App" style={{ backgroundImage: `url(${Mars})`, height:"600 px",  backgroundRepeat: "no-repeat", backgroundSize:"cover" }}>
+        <div className="flex" >
           <Header title=" Scrum Mars " />
           <TaskBanner userName={userName}/>
           <div className={"title-container-last"}>

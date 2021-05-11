@@ -9,7 +9,7 @@
   width: 100%; 
   height:70px; 
   object-fit: cover;
-  background-color: grey;
+  background-color: rgb(90, 98, 112);
   opacity: 0.7;
   
 }
@@ -17,9 +17,10 @@
   width: 100%; 
   height:40px; 
   object-fit: cover;
-  background-color: grey;
+  background-color: rgb(90, 98, 112);
   opacity: 0.7;
   margin-bottom: 20px ;
+  border-radius: 0 0  30px 30px;
 }
 h3{
   margin: 10px;
@@ -73,10 +74,10 @@ font-size: 50px;
   margin-left: 100px;
   border: 1px dotted;
 }
-.container {
+div .container {
   width: 50%;
-  background: #dfe3e6;
-  border-radius: 5px;
+  background: #a7a5b3;
+  border-radius: 20px;
   margin: 20px;
   padding: 0 10px;
 }
