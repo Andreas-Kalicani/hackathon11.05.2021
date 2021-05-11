@@ -11,7 +11,9 @@ import './Tasks.css'
             key={index}
             {...task}
           />
+          
         ))}
+        <button>Do it!</button>
       </div>
     );
   };
