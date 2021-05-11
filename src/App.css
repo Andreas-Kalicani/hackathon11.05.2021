@@ -23,3 +23,7 @@ body{
     height: 50vh; 
     background-color: grey;
 }
+
+.app{
+    display: flex;
+}
