@@ -1,5 +1,8 @@
 import React from 'react'
 
 export const TaskBanner = props => (
-    <h4> Hello {props.userName}! You have (number of the taks for do it) tasks to do today!</h4>
+    <div className={"title-container"}>
+ <h4 className={"text2"} > Hello {props.userName}! You have this tasks to do today!</h4>
+    </div>
+   
 ) 
