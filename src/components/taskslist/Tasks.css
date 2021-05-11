@@ -1,0 +1,15 @@
+.allTask-containers{
+    width: 30%;
+}
+
+.task-container{
+    width: 100%;
+}
+
+.task-title{
+    font-size: 30px;
+}
+
+.task-container p{
+    color: red;
+}
