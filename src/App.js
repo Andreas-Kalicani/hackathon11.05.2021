@@ -2,7 +2,7 @@
 import './App.css';
 import { TaskBanner } from './components/TaskBanner'
 import Header from './components/Header';
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import DragItem from "./components/drag-item";
 import DropItem from "./components/drop-item";
@@ -96,9 +96,28 @@ function App() {
   
    const [allValues, setValue] = useState(task);
 
+   const [weather,setWeather] = useState([])
   
 
-  
+   const API_URL = "https://api.nasa.gov/insight_weather/?api_key=AxFdr8lEfFLxA9aAMuD0mE9WNYvNQ5kjwfKAZOgB&feedtype=json&ver=1.0"
+
+   const getDataRandom = () => {
+     
+    fetch("https://api.nasa.gov/insight_weather/?api_key=AxFdr8lEfFLxA9aAMuD0mE9WNYvNQ5kjwfKAZOgB&feedtype=json&ver=1.0")
+      .then((response) => response.json())
+      
+      .then((data) => {
+        setWeather(data)
+      }
+      )};
+
+
+      useEffect (() => {
+        getDataRandom()
+        
+      }, []);
+
+ 
 
   return (
    
@@ -106,8 +125,11 @@ function App() {
         <div className="flex" >
           <Header title=" Scrum Mars " />
           <TaskBanner userName={userName}/>
+          <h4 className={"title-container"}>May 12, 2021	Sol :79	 Max: -9°F	Min: -114°F	Pressure: 755.1	Sunrise: 05:46:15	Sunset:18:33:31 </h4>
+
           <div className={"title-container-last"}>
-            <h2 className={"text3"}>Total points today:&nbsp;            
+            
+            <h2 className={"text3"}>Total Bitcoins earned:&nbsp;            
               {Object.keys(allValues)
                   .map(key => ({ id: key, ...allValues[key] }))
                   //filter tasks with state = DONE
