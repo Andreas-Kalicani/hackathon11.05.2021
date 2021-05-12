@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-import './App.css';
-import Point from "./components/points";
-import Title from "./components/Title";
-import Mars from "./images/mars.jpg";
-
-
-=======
-
 import './App.css';
 import { TaskBanner } from './components/TaskBanner'
 import Header from './components/Header';
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import DragItem from "./components/drag-item";
 import DropItem from "./components/drop-item";
@@ -96,10 +86,8 @@ const task =  {
       progress: false,
       state: "TO DO"
     },
->>>>>>> skeleton3
 
 }
-  
 function App() {
 
   const [userName, setUserName] = useState('John')
@@ -130,14 +118,6 @@ function App() {
  
 
   return (
-<<<<<<< HEAD
-    <div className="App">
-     <div className="flex" style={{ backgroundImage: `url(${Mars})`, height:"100vh",  backgroundRepeat: "no-repeat", backgroundSize:"cover" }} >
-       <Title title={"Mars Scrum"}/>
-       <Point/> 
-    </div>
-    
-=======
    
       <div className="App" style={{ backgroundImage: `url(${Mars})`, height:"600 px",  backgroundRepeat: "no-repeat", backgroundSize:"cover" }}>
         <div className="flex" >
@@ -209,7 +189,6 @@ function App() {
         </DropItem>
         </div>
       </div>
->>>>>>> skeleton3
     </div>
 
     
