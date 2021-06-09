@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Demo: 
 
-In the project directory, you can run:
+https://keen-bose-1a7f8f.netlify.app/
 
 ### `yarn start`
 
